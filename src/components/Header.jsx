@@ -40,7 +40,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="absolute top-0 flex justify-between items-center w-screen px-[100px] z-50">
+    <div className="absolute top-0 flex justify-between items-center w-screen px-5 z-50">
       <div>
         <img src={LOGO} alt="Logo" className="w-48" />
       </div>
