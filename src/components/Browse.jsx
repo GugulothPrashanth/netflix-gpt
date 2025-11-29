@@ -1,13 +1,17 @@
-import React from "react";
+import useNowPlayingMovies from "../hooks/useNowPlayingMovies";
 import Header from "./Header";
+import MainContainer from "./MainContainer";
+import SecondaryContainer from "./SecondaryContainer";
 
 const Browse = () => {
+  useNowPlayingMovies();
+
   return (
     <div>
       <Header />
-      <div className="pt-[100px] mx-[150px]">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae ipsum
-        fuga nobis! Dolorem voluptate quis omnis ratione tempora, enim harum.
+      <div>
+        <MainContainer />
+        <SecondaryContainer />
       </div>
     </div>
   );
