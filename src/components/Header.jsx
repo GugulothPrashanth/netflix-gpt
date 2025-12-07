@@ -3,10 +3,10 @@ import React, { useEffect } from "react";
 import { auth } from "../utils/firebase";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { addUser, removeUser } from "../../redux/userSlice";
+import { addUser, removeUser } from "../redux/userSlice";
 import { LOGO, SUPPORTED_LANGUAGES } from "../utils/constants";
-import { toggleGptSearchView } from "../../redux/gptSlice";
-import { changeLanguage } from "../../redux/configSlice";
+import { toggleGptSearchView } from "../redux/gptSlice";
+import { changeLanguage } from "../redux/configSlice";
 
 const Header = () => {
   const showGptSearch = useSelector((state) => state.gpt.showGptSearch);
